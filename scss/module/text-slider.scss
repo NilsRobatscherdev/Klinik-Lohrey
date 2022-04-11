@@ -1,0 +1,35 @@
+.text-slider{
+    .content{
+        padding: 25px 0 50px 0;
+        flex-wrap: wrap;
+        display: flex;
+        .slider{
+            width: 50%;
+                @include bp(max-width, $bp-sm) {
+                    width: 100%;
+                }
+            .slick-next{
+                right: 0;
+            }
+            .slick-prev{
+                left: 85%;
+            }
+            .slick-next,
+            .slick-prev{
+                transform: translate(0);
+                top: 100%;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 50px;
+            flex-direction: column;
+            @include bp(max-width, $bp-xs) {
+                width: 100%;
+            }
+        }
+    }
+}

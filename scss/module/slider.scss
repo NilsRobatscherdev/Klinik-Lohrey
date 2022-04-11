@@ -1,0 +1,72 @@
+.slider-with-content {
+    margin-bottom: 50px;
+    img{
+        width: 100%;
+        max-height: 765px;
+            @include bp(max-width, $bp-sm) {
+                margin-bottom: 30px;
+            }
+    }
+    .above-content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-75%, -10%);
+        @include bp(max-width, $bp-sm) {
+            position: relative;
+            transform: none;
+            left: 0;
+        }
+        .headline {
+            color: $bg-color;
+                @include bp(max-width, $bp-sm) {
+                    color:$font-color;
+            }
+        }
+        .copytext {
+            width: 550px;
+            background-color: $font-color;
+            padding: 20px;
+            margin: 0;
+            color: $bg-color;
+
+            @include bp(max-width, $bp-sm) {
+                width: auto;
+                margin: 15px 0;
+                background: none;
+                padding: 0;
+                color: $font-color;
+            }
+            p {
+                color: $bg-color;
+            }
+        }
+        .button_content {
+            display: flex;
+            justify-content: flex-end;
+            button {
+                width: auto;
+                height: 50px;
+                background-color: $font-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+                padding: 20px;
+                border: none;
+                @include bp(max-width, $bp-sm) {
+                    margin: 0 20px 20px 20px;
+                    background-color: $font-color;
+
+                }
+                a {
+                    color: $bg-color;
+                    text-decoration: none;
+                        @include bp(max-width, $bp-sm) {
+                            color: $bg-color;
+                       }
+                }
+            }
+        }
+    }
+}

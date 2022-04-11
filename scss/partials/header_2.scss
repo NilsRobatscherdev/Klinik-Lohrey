@@ -1,0 +1,38 @@
+.header_2 {
+    padding: 25px 0;
+    .container {
+        .row {
+            justify-content: center;
+            align-items: center;
+            .logo-wrapper {
+                z-index: 4;
+                .logo {
+                    z-index: 20;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+            .nav-wrapper {
+                margin: 25px 0;
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    z-index: 3;
+                    padding: 0;
+                    li {
+                        padding: 0 20px;
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

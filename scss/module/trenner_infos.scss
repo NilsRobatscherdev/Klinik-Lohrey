@@ -1,0 +1,37 @@
+    .section-trenner_infos{
+        background-size:  cover;
+        background-position: center;
+        padding: 30px 0;
+        .content{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: $bg-color;
+                margin-top: $margin-h2;
+            }
+            .list{
+                width: 100%;
+                ul{
+                    margin:0;
+                    padding:0;
+                    list-style-type: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        display: flex;
+                        justify-content:center;
+                        align-items: center;
+                        flex-direction: column;
+                        color: $bg-color;
+                        img{
+                            height:  50px;
+                            margin-top: $margin-section;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }

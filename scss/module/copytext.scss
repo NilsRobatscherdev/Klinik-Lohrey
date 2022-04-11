@@ -1,0 +1,19 @@
+.copytext {
+    .twocol {
+        column-count: 2;
+        column-gap: 30px;
+        @include bp(max-width, $bp-xs) {
+            -webkit-column-count: 1;
+            -webkit-column-gap: 0px;
+            -moz-column-count: 1;
+            -moz-column-gap: 0px;
+            column-count: 1;
+            column-gap: 0px;
+        }
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

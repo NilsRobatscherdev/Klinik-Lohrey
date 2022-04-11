@@ -1,0 +1,21 @@
+.zitatbox{
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        @include bp(max-width, $bp-xs) {
+            flex-direction: column;
+            padding: 0;
+         }
+        img {
+            width: 20%;
+            @include bp(max-width, $bp-xs) {
+                width: 100%;
+             }
+        }
+        .text{
+            width: 70%;
+        }
+    }
+}

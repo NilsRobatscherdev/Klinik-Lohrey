@@ -1,0 +1,173 @@
+.slick-arrow {
+    color: $font-color!important;
+}
+
+.slick-next,
+.slick-prev {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    transform: translate(0, 150%);
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: $font-color !important;
+    font-size: 30px;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+    font-size: 0;
+}
+
+.slick-next {
+    right: 60px;
+    float: none;
+    left: auto;
+}
+
+.slick-prev {
+    right: 150px;
+    float: none;
+    left: auto;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.normal {
+    display: flex !important;
+}
+
+.gespiegelt {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+body {
+    background-color: $bg-color;
+    color: $font-color;
+    font-size: $font-size-copytext;
+}
+
+.textLeftAlign {
+    text-align: left;
+}
+
+.textRightAlign {
+    text-align: right;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover {
+    color: $highlight-color;
+}
+
+.button {
+    height: 75px;
+    width: 306px;
+    background-color: $highlight-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-box-shadow: -2px -1px 22px -9px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -2px -1px 22px -9px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px -1px 22px -9px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    justify-content: center;
+    font-family: "Kanit Bold";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $bg-color;
+    &:hover {
+        background-color: $bg-color;
+        transition: 0.3s all;
+        color: $highlight-color;
+        a,
+        input {
+            color: $highlight-color !important;
+            transition: 0.3s all;
+            
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+    a {
+        color: $bg-color;
+        text-decoration: none;
+        font-family: "Kanit Bold";
+        font-size: 24px;
+    }
+}
+
+.btn_big {
+    height: 150px;
+    padding-left: $margin-h2;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: $font-color !important;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $font-color !important;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $font-color !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: $font-color !important;
+    opacity: 1;
+}
+
+ul {
+    padding: 0;
+}
+
+.white {
+    color: $bg-color;
+}
+
+.grey_bg {
+    background-color: $grey-color;
+}
+
+.blue_bg {
+    background-color: $highlight-color;
+    color: $bg-color;
+}
+
+.highlight-font-color {
+    color: $highlight-color;
+}
+
+.bg-font-color {
+    color: $bg-color;
+}
+
+.content-area {
+    padding-top: 200px;
+}

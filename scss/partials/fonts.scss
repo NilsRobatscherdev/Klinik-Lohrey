@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Kanit Bold";
+    src: url("../../assets/fonts/Kanit-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Kanit SemiBold";
+    src: url("../../assets/fonts/Kanit-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OpenSans Bold";
+    src: url("../../assets/fonts/OpenSans-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url("../../assets/fonts/OpenSans-Regular.woff") format("woff");
+}
+
+body {
+    font-family: 'OpenSans Regular';
+    letter-spacing: 3.2px;
+    font-size: $font-size-copytext;
+    color: $font-color;
+    @include bp(max-width,
+    $bp-lg) {
+        font-size: 24px;
+    }
+    @include bp(max-width,
+    $bp-sm) {
+        font-size: 24px;
+    }
+    @include bp(max-width,
+    $bp-xs) {
+        font-size: 24px;
+    }
+}
+
+.copytext {
+    color: $font-color;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    margin: 0;
+    @include bp(max-width,
+    $bp-xs) {
+        font-size: 24px !important;
+        line-height: 1.2;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+.h1 {
+    font-family: 'Kanit Bold';
+    font-size: $font-size-h1;
+    margin: $margin-h1;
+    color: $highlight-color;
+    line-height: .94;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    @include bp(max-width,
+    $bp-md) {
+        font-size: 48px;
+    }
+
+}
+
+h2,
+.h2 {
+    font-family: 'Kanit SemiBold';
+    font-size: $font-size-h2;
+    margin: $margin-h2;
+    color: $font-color;
+    line-height: .94;
+    letter-spacing: .1;
+        @include bp(max-width,
+            $bp-xs) {
+            font-size: 32px !important;
+            line-height: 1.2;
+        }
+}
+
+h3,
+.h3 {
+    font-family: 'Kanit SemiBold';
+    color: $font-color;
+    line-height: .94;
+    letter-spacing: .1;
+}
+
+.h1_big {
+    font-size: $font-size-h1;
+    line-height: .94;
+    letter-spacing: 15px;
+}
+
+.subline {
+    font-family: 'Kanit Bold';
+    line-height: 1.2;
+    letter-spacing: 5px;
+}
+
+.button{
+        @include bp(max-width,
+            $bp-xs) {
+                width: 400px;
+        }
+    a{
+        @include bp(max-width,
+                $bp-xs) {
+                font-size: 24px !important;
+                line-height: 1.2;
+            }
+    }
+}
+

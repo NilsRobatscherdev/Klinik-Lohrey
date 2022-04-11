@@ -1,0 +1,29 @@
+.parallax-container{
+    min-height: 600px;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .parallax-text{
+        .content{
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: flex;
+                    justify-content:center;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 65px;
+                        margin-bottom: 30px;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

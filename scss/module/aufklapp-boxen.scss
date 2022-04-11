@@ -1,0 +1,35 @@
+.aufklapp-boxen{
+    .aufklapp-boxen-container{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            li{
+                list-style-type: none;
+                h3{
+                    &:after {
+                        content: '';
+                        height: 20px;
+                        width: 20px;
+                        position: absolute;
+                        right: 0;
+                        background: url(../../assets/img/plus.svg) center center no-repeat;
+                        background-size: 20px 20px;
+                        transition: 0.2s height;
+                    }
+
+                    &.active:after {
+                        height: 2px;
+                    }
+                }
+                .content{
+                    display: none;
+                        p {
+                            margin: 0;
+                            padding: 0;
+                        }
+                }
+            }
+        }
+    }
+}

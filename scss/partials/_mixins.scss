@@ -1,0 +1,67 @@
+// =============================================
+// Mixin - Breakpoint
+// =============================================
+
+$mq-support: true !default;
+$mq-fixed-value: 1024px !default;
+
+@mixin bp($feature, $value) {
+    // Set global device param
+    $media: only screen;
+
+    // Media queries supported
+    @if $mq-support == true {
+
+        @media #{$media} and ($feature: $value) {
+            @content;
+        }
+
+        // Media queries not supported
+    } @else {
+
+        @if $feature == 'min-width' {
+            @if $value <= $mq-fixed-value {
+                @content;
+            }
+        } @else if $feature == 'max-width' {
+            @if $value >= $mq-fixed-value {
+                @content;
+            }
+        }
+
+    }
+}
+
+
+// =============================================
+// Mixin - Clearfix
+// =============================================
+
+@mixin clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+// =============================================
+// Mixin - Pseudo Inline Icon
+// =============================================
+
+
+@mixin icon-pseudo($path, $width, $height, $before: true) {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    width: $width;
+    height: $height;
+    background-image: url("../img/icons/#{$path}.svg");
+    background-size: $width auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    @if $before == true {
+        margin-right: 15px;
+        transition: transform .1s ease-out;
+    }
+}
